@@ -1,0 +1,12 @@
+applications:
+- path: target/garage-miri-java-1.0.0-BUILD.war
+  memory: 2048M
+  instances: 1
+  domain: mybluemix.net
+  name: garage-miri-java
+  host: garage-miri-java
+  disk_quota: 2048M
+  services:
+    - hcl-miri-dev-CloudantNoSQLDB
+    - hcl-miri-dev-PersonalityInsights
+    - hcl-miri-dev-TradeoffAnalytics
